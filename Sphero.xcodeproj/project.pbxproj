@@ -59,6 +59,12 @@
 		A05BAFBB1DAC271900C58D9C /* Performer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05BAFBA1DAC271900C58D9C /* Performer.framework */; };
 		A05BAFBD1DAC271A00C58D9C /* RelativeInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05BAFBC1DAC271A00C58D9C /* RelativeInterface.framework */; };
 		A05BAFC01DAC271A00C58D9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05BAFBE1DAC271A00C58D9C /* LaunchScreen.xib */; };
+		A05BAFD01DAC277F00C58D9C /* SpheroPerformPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05BAF6D1DAC271900C58D9C /* SpheroPerformPlugin.framework */; };
+		A05BAFD11DAC278800C58D9C /* Performer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05BAFBA1DAC271900C58D9C /* Performer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A05BAFD21DAC278800C58D9C /* RelativeInterface.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05BAFBC1DAC271A00C58D9C /* RelativeInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A05BAFD31DAC278800C58D9C /* SpheroPerformPlugin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A05BAF6D1DAC271900C58D9C /* SpheroPerformPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A05BAFD51DAC280200C58D9C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05BAFD41DAC280200C58D9C /* RobotKit.framework */; };
+		A05BAFD81DAC2D6200C58D9C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05BAFD71DAC2D6200C58D9C /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +74,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A05BAFD11DAC278800C58D9C /* Performer.framework in CopyFiles */,
+				A05BAFD21DAC278800C58D9C /* RelativeInterface.framework in CopyFiles */,
+				A05BAFD31DAC278800C58D9C /* SpheroPerformPlugin.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +131,9 @@
 		A05BAFBC1DAC271A00C58D9C /* RelativeInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelativeInterface.framework; path = ../Frameworks/RelativeInterface.framework; sourceTree = "<group>"; };
 		A05BAFBF1DAC271A00C58D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A05BAFC11DAC271A00C58D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05BAFD41DAC280200C58D9C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		A05BAFD71DAC2D6200C58D9C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ExternalAccessory.framework; sourceTree = DEVELOPER_DIR; };
+		A05BAFD91DAC2D6200C58D9C /* SpheroViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpheroViewer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,7 @@
 			files = (
 				A05BAF761DAC271900C58D9C /* RelativeInterface.framework in Frameworks */,
 				A05BAF741DAC271900C58D9C /* Performer.framework in Frameworks */,
+				A05BAFD51DAC280200C58D9C /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +160,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05BAFD01DAC277F00C58D9C /* SpheroPerformPlugin.framework in Frameworks */,
 				A05BAFBD1DAC271A00C58D9C /* RelativeInterface.framework in Frameworks */,
+				A05BAFD81DAC2D6200C58D9C /* ExternalAccessory.framework in Frameworks */,
 				A05BAFBB1DAC271900C58D9C /* Performer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +177,7 @@
 				A05BAF6E1DAC271900C58D9C /* SpheroPerformPlugin */,
 				A05BAF821DAC271900C58D9C /* SpheroViewer */,
 				A05BAF571DAC271700C58D9C /* Products */,
+				A05BAFD61DAC2D6200C58D9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +245,7 @@
 		A05BAF721DAC271900C58D9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A05BAFD41DAC280200C58D9C /* RobotKit.framework */,
 				A05BAF731DAC271900C58D9C /* Performer.framework */,
 				A05BAF751DAC271900C58D9C /* RelativeInterface.framework */,
 			);
@@ -238,6 +255,7 @@
 		A05BAF821DAC271900C58D9C /* SpheroViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A05BAFD91DAC2D6200C58D9C /* SpheroViewer.entitlements */,
 				A05BAF861DAC271900C58D9C /* AppDelegate.h */,
 				A05BAF871DAC271900C58D9C /* AppDelegate.m */,
 				A05BAF891DAC271900C58D9C /* ConnectViewController.h */,
@@ -293,6 +311,14 @@
 			children = (
 				A05BAFBA1DAC271900C58D9C /* Performer.framework */,
 				A05BAFBC1DAC271A00C58D9C /* RelativeInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A05BAFD61DAC2D6200C58D9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05BAFD71DAC2D6200C58D9C /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -393,6 +419,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6EZA4ZP3UF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -678,6 +712,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/SpheroPerformPlugin",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpheroPerformPlugin/SpheroPerformPlugin-Prefix.pch";
@@ -685,6 +720,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.SpheroPerformPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -709,6 +748,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/SpheroPerformPlugin",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpheroPerformPlugin/SpheroPerformPlugin-Prefix.pch";
@@ -716,6 +756,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.SpheroPerformPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -731,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpheroViewer/SpheroViewer.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
 				ENABLE_BITCODE = NO;
@@ -743,6 +788,10 @@
 				INFOPLIST_FILE = SpheroViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.SpheroViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -754,6 +803,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpheroViewer/SpheroViewer.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6EZA4ZP3UF;
 				ENABLE_BITCODE = NO;
@@ -766,6 +816,10 @@
 				INFOPLIST_FILE = SpheroViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = JustAddMusicMedia.SpheroViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -793,6 +847,7 @@
 				A05BAFC61DAC271A00C58D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A05BAFC71DAC271A00C58D9C /* Build configuration list for PBXNativeTarget "SpheroFormPlugin" */ = {
 			isa = XCConfigurationList;
@@ -801,6 +856,7 @@
 				A05BAFC91DAC271A00C58D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A05BAFCA1DAC271A00C58D9C /* Build configuration list for PBXNativeTarget "SpheroPerformPlugin" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +865,7 @@
 				A05BAFCC1DAC271A00C58D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A05BAFCD1DAC271A00C58D9C /* Build configuration list for PBXNativeTarget "SpheroViewer" */ = {
 			isa = XCConfigurationList;
@@ -817,6 +874,7 @@
 				A05BAFCF1DAC271A00C58D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
